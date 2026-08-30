@@ -8,15 +8,7 @@ import org.springframework.context.ApplicationContext;
 public class DemoApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext context =
-				SpringApplication.run(DemoApplication.class, args);
-
-		PaymentGateway paymentGateway = context.getBean(PaymentGateway.class);
-
-		System.out.println(paymentGateway.getType());
-		System.out.println(paymentGateway.getRetryCount());
-		System.out.println(paymentGateway.isEnabled());
-		System.out.println(paymentGateway.getTimeout());
+		SpringApplication.run(DemoApplication.class, args);
 	}
 
 }
